@@ -1,0 +1,26 @@
+@media only screen and (max-width: 500px){
+
+	
+
+	main .gallery{
+		width: 100%;
+		background: #f2f2f2;
+		padding: 10px;
+	}
+
+	main .gallery .container{
+		width: 100%;
+		padding: 0px;
+	}
+
+	main .gallery .container img{
+		width: 100%;
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	main .gallery .container .price{
+		width: 100%;
+	}
+
+}
