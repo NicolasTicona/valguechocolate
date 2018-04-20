@@ -1,6 +1,9 @@
 @media only screen and (max-width: 500px){
 
 	
+	main .sub-title{
+		font-size: 14px;
+	}
 
 	main .gallery{
 		width: 100%;
@@ -11,6 +14,7 @@
 	main .gallery .container{
 		width: 100%;
 		padding: 0px;
+		padding-bottom: 10px;
 	}
 
 	main .gallery .container img{
