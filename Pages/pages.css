@@ -85,7 +85,8 @@ main .gallery .container img{
 main .gallery .container .tags{
 	font-size: 12px;
 	font-weight: 500;
-	color: #bbb;
+	color: #e74c3c;
+	font-weight: bold;
 }
 
 main .gallery .container p{
