@@ -12,7 +12,6 @@
 	}
 
 	main .season-stain{
-		/* display: none; */
 		right: 0;
 		padding: 0;
 	}
@@ -95,5 +94,12 @@
 
 	main .special-days .day .text{
 		font-weight: 700;
+	}
+}
+
+
+@media screen and (max-width: 350px){
+	header .menu a{
+		font-size: 11px;
 	}
 }
