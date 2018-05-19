@@ -42,6 +42,7 @@
 	}
 
 	main .season-stain img{
+		display: none;
 		width: 120px;
 		transform: none;
 	}
