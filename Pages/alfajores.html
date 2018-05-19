@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ValGue | Alfajores</title>
+	<title>Alfajores | Valgue Chocolate</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -10,15 +10,23 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
 
 	<!-- Css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="./pages.css">
 	<link rel="stylesheet" href="./responsive-pages.css">
 
+	<!-- Jquery -->
+	
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>	
 </head>
 <body>
 
 	<header>
 		<div class="brand">
 			<a href="../index.html"><img src="../Assets/Logo.png" alt="ValGue Chocolate"></a>
+			<img src="../Assets/snow1.png" alt="" class="snowimage">
 		</div>
 	</header>
 
@@ -31,9 +39,7 @@
 			<div class="container">
 				<img src="../Assets/Alfajores/1.jpg" alt="Alfajor">
 
-				<div class="tags">Dia de la Madre</div>
-
-				<p>10 Unidades medianas</p>
+				<p>10 Unidades Grandes</p>
 				
 				<button class="price btn">12 Soles</button>
 
@@ -44,12 +50,10 @@
 			<div class="container">
 				<img src="../Assets/Alfajores/2.jpg" alt="Alfajor">
 
-				<div class="tags">Dia de la Madre</div>
-
 				<p>10 Unidades grandes </p>
 				<p>Bañadas en Chocolate</p>
 
-				<button class="price btn">20 Soles</button>
+				<button class="price btn">15 Soles</button>
 
 				<span class="code">Código: a002</span>
 			</div>
@@ -57,37 +61,101 @@
 			<div class="container">
 				<img src="../Assets/Alfajores/3.jpg" alt="Alfajor">
 
-				<div class="tags">Dia de la Madre</div>
-
-				<p>24 Unidades chicas</p>
+				<p>24 Unidades Grandes</p>
 				<p>Bañadas o Tradicional</p>
 
-				<button class="price btn">20 Soles</button>
+				<button class="price btn">25 Soles</button>
 
 				<span class="code">Código: a003</span>
 			</div>
+
+			<div class="container">
+				<img src="../Assets/Alfajores/4.jpg" alt="Alfajor">
+
+				<p>12 Unidades Pequeñas</p>
+				
+				<button class="price btn">6 Soles</button>
+
+				<span class="code">Código: a004</span>
+			</div>
+
+
+			<div class="container">
+				<img src="../Assets/Alfajores/5.jpg" alt="Alfajor">
+
+				<p>12 Unidades Pequeñas </p>
+				<p>Bañadas en Chocolate</p>
+
+				<button class="price btn">8 Soles</button>
+
+				<span class="code">Código: a005</span>
+			</div>
+
+			<div class="container">
+				<img src="../Assets/Alfajores/6.jpg" alt="Alfajor">
+
+				<p>24 Unidades Pequeñas</p>
+				<p>Bañadas y Tradicional</p>
+
+				<button class="price btn">15 Soles</button>
+
+				<span class="code">Código: a006</span>
+			</div>			
 		</div>
 
 	</main>
 
-		<footer>
+	<footer>
 		
-		<div class="head">
-			<img src="../Assets/Logo.png" alt="ValGue Chocolate">
+		<div class="head"><a href="#">
+				<img src="../Assets/Logo.png" alt="ValGue Chocolate"></a>
 		</div>
 
 
-			<div class="contact">
+			<div class="contact" id="contact">
 				<div class="email">
-					<img src="../Assets/envelope.png" alt="gabriela610vg@gmail.com">
-					gabriela610vg@gmail.com
+					<p>
+						<span class="fa fa-envelope"></span> gabriela610vg@gmail.com
+					</p>
 				</div>
 				<div class="tel">
-					<img src="../Assets/phone.png" alt="+51 961057471">
-					+51 961057471
+					<p>
+						<span class="fa fa-phone"></span> 970974546
+					</p>
 				</div>
 			</div>
 	</footer>
 
+	<script>
+	
+			var header = $('header')
+			var cont_logo = $('header .brand')
+			var logo = $('header .brand a img')
+			var snow = $('header .brand .snowimage')
+			var scrollTop = 0;
+		
+			header.css({
+				background: '#fff'
+			})
+	
+	
+			$(window).scroll(function(){
+				scrollTop = $(window).scrollTop();
+		
+				if(scrollTop > 100){
+					header.css({
+						background: 'transparent'
+					})
+				}	
+				else{	
+					header.css({
+						background: '#fff'
+					})
+	
+				}		
+				
+			})
+		
+		</script>	
 </body>
 </html>

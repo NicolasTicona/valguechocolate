@@ -2,112 +2,162 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ValGue | Chocolate</title>
+
+	<title>Dulces de Chocolate | Valgue Chocolate</title>
+
+	<meta name="description" content="Dulces de Chocolate. Celebra y disfruta con Valgue Chocolate el placer de disfrutar.">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="robots" content="index, follow">
+	<meta name="author" content="Nicolas Ticona Valdivia">
+	<link rel=”canonical” href=”nicolasticona.github.io/valguechocolate” />
 	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 
 	<!-- Fonts -->
-	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700|Indie+Flower" rel="stylesheet">
 
 	<!-- Css -->
-	<link rel="stylesheet" href="./estilos.css">
-	<link rel="stylesheet" href="./responsive.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+	<link rel="stylesheet" href="./css/estilos.css">
+	<link rel="stylesheet" href="./css/responsive.css">
+
+	<!-- Jquery -->
+	
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 
 </head>
 <body>
 
-	<header>
+	<header id="header">
 		
-		<div class="brand"><a href="#">
-				<img src="./Assets/Logo.png" alt="ValGue Chocolate"></a>
-		</div>
-
-		<nav class="menu-navigation">
-			<div class="links">
-				<a href="#about-me">Nosotros</a>
-				<a href="#showcase">Productos</a>
-				<a href="#contact">Contacto</a>
-			</div>
-			<div class="contact">
-				<div class="email">
-					<img src="./Assets/envelope.png" alt="gabriela610vg@gmail.com">
-					gabriela610vg@gmail.com
-				</div>
-				<div class="tel">
-					<img src="./Assets/phone.png" alt="+51 961057471">
-					+51 961057471
-				</div>
-			</div>
+		<nav class="menu">
+			<a href="#header" id="linkHome"><img src="./Assets/LogoContrast.png" alt="Valgue Chocolate"></a>
+			<a href="#" id="linkProductos"> <span class="fa fa-clipboard-list"></span> Productos</a>
+			<a href="#" id="linkContacto"> <span class="fa fa-envelope"></span> Contacto</a>
+			<ul class="list">
+				<a href="#" class="item" id="scrollT">Trufas</a>
+				<a href="#" class="item" id="scrollB">Bombones</a>
+				<a href="#" class="item" id="scrollP">Paletas</a>
+				<a href="#" class="item" id="scrollCH">Chocotejas</a>
+				<a href="#" class="item" id="scrollA">Alfajores</a>
+			</ul>
 		</nav>
+
+
+		<div class="wallpaper">
+			<div class="color-imposed">
+				<div class="brand">
+					<img class="animated zoomInUp" src="Assets/LogoContrast.png" alt="Valgue Chocolate" title="Valgue Chocolate">
+				</div>
+
+				<div class="brand-description">
+					<article class="description">
+						<p>Estamos dedicados a la elaboración de Dulces de Chocolate hechos en casa con productos de excelente calidad, en elegantes y diversas presentaciones para su mejor agrado.</p>
+					</article>
+				</div>
+			</div>
+		</div>		
 
 	</header>
 
 
 	<main>
-		
-		
-		<section class="about-me" id="about-me">
-			<p class="text">ValGue CHOCOLATE estamos dedicados a la elaboración de <strong>Dulces de Chocolate</strong> hechos en casa con productos de <b>excelente calidad</b>, en <b>elegantes</b> y <b>diversas</b> presentaciones para su mejor agrado. </p>
-			<p class="text">Aseguramos su total satisfacción y que su paladar no podrá estar más satisfecho con nuestros increíbles sabores</p>
-		</section>
+
+		<div class="season-stain animated infinite pulse">
+			<img src="./Assets/Temp-inviernootoño.png" alt="Temporada Otoño e Invierno">
+		</div>
+
+		<div class="season-promotion">
+
+			<div class="center">
+				<h2 class="title">LLegó la temporada Otoño Invierno</h2>
+				<p>No esperes más y has tus pedidos</p>
+				<div class="products">
+					<a href="#" class="product">Trufas</a>
+					<a href="#" class="product">Bombones</a>
+					<a href="#" class="product">Paletas</a>
+					<a href="#" class="product">Chocotejas</a>
+					<a href="#" class="product">Alfajores</a>
+				</div>
+
+			</div>
+			
+			<div class="cont-image">
+				<img src="./Assets/copoc.png" alt="Otoño e Invierno">
+			</div>
+
+
+		</div>
 
 		<section class="showcase" id="showcase">
 			
 			<section class="chocolate trufas" >
-				<div class="info">
-					<h2 class="title">Trufas</h2>
 
-					<p class="description">¿No has probado nuestras Trufas? <br> No se aguante las ganas! Ofrecemos una gran variedad de <strong>Trufas</strong> para su deleite</p>
+				<div class="wallpaper">
+					<div class="info">
+						<h2 class="title">Trufas</h2>
 
-					<a target="_blank" href="Pages/trufas.html" class="btn">Catálogo</a>
+						<p class="description">¿No has probado nuestras Trufas? <br> No se aguante las ganas! Ofrecemos una gran variedad de <strong>Trufas</strong> para su deleite</p>
+
+						<a target="_blank" href="Pages/trufas.html" class="btn">Catálogo</a>
+					</div>
 				</div>
-				<div class="wallpaper"></div>
 			</section>
 
 
 
 			<section class="chocolate bombones">
-				<div class="wallpaper"></div>
-				<div class="info">
-					<h2 class="title">Bombones</h2>
+				<div class="wallpaper">
+					<div class="info">
+						<h2 class="title">Bombones</h2>
 
-					<p class="description">¿Ha pensado, imaginado lo delicioso que sería probar unos <strong>Bombones</strong> de chocolate ahora mismo? <br> Delicioso mires por donde lo mires</p>
+						<p class="description">¿Ha pensado, imaginado lo delicioso que sería probar unos <strong>Bombones</strong> de chocolate ahora mismo? <br> Delicioso mires por donde lo mires</p>
 
-					<a target="_blank" href="Pages/bombones.html" class="btn">Catálogo</a>
+						<a target="_blank" href="Pages/bombones.html" class="btn">Catálogo</a>
+					</div>
 				</div>
+
 			</section>
 
 			<section class="chocolate paletas">
-				<div class="info">
-					<h2 class="title">Paletas</h2>
 
-					<p class="description">¿Y que tal si se da el gusto de deleitarse con <strong>Paletas</strong> de chocolate?<br> Nos encargamos de que su paladar no olvide estos sabores por excelencia </p>
+				<div class="wallpaper">
+					<div class="info">
+						<h2 class="title">Paletas</h2>
 
-					<a target="_blank" href="Pages/paletas.html" class="btn">Catálogo</a>
+						<p class="description">¿Y que tal si se da el gusto de deleitarse con <strong>Paletas</strong> de chocolate?<br> Nos encargamos de que su paladar no olvide estos sabores por excelencia </p>
+
+						<a target="_blank" href="Pages/paletas.html" class="btn">Catálogo</a>
+					</div>
 				</div>
-				<div class="wallpaper"></div>
 			</section>
 
 			<section class="chocolate chocotejas">
-				<div class="wallpaper"></div>
-				<div class="info">
-					<h2 class="title">Chocotejas</h2>
-
-					<p class="description"> ¿Quieres <strong>Chocotejas</strong>? <br> Sé que quieres, por eso te damos nuestro mejor trato, a un especial precio por el mejor de los Placeres</p>
-
-					<a target="_blank" href="Pages/chocotejas.html" class="btn">Catálogo</a>
+				<div class="wallpaper">
+					<div class="info">
+						<h2 class="title">Chocotejas</h2>
+	
+						<p class="description"> ¿Quieres <strong>Chocotejas</strong>? <br> Sé que quieres, por eso te damos nuestro mejor trato, a un especial precio por el mejor de los Placeres</p>
+	
+						<a target="_blank" href="Pages/chocotejas.html" class="btn">Catálogo</a>
+					</div>
 				</div>
 			</section>
 
 			<section class="chocolate alfajores">
-				<div class="info">
-					<h2 class="title">Alfajores</h2>
 
-					<p class="description">¡No pueden faltar los <strong>Alfajores</strong>! <br> Nada mejor que un delicioso alfajor como postre </p>
+				<div class="wallpaper">	
+					<div class="info">
+						<h2 class="title">Alfajores</h2>
 
-					<a target="_blank" href="Pages/alfajores.html" class="btn">Catálogo</a>
-				</div>
-				<div class="wallpaper"></div>
+						<p class="description">¡No pueden faltar los <strong>Alfajores</strong>! <br> Nada mejor que un delicioso alfajor como postre </p>
+
+						<a target="_blank" href="Pages/alfajores.html" class="btn">Catálogo</a>
+					</div>
+			</div>
 			</section>
 	
 		</section>
@@ -120,28 +170,36 @@
 
 		<section class="special-days">
 			<div class="day">
-				<p class="text oscure">Día del Padre</p>
+				<img src="./Assets/Dias Especiales/padre.png" alt="Día del Padre">
+				<p class="text">Día del Padre</p>
 			</div>
 			<div class="day">
-				<p class="text light">Día de la Madre</p>
+				<img src="./Assets/Dias Especiales/madre.png" alt="Día de la Madre">
+				<p class="text">Día de la Madre</p>
 			</div>
 			<div class="day">
-				<p class="text oscure">Día del Maestro</p>
+				<img src="./Assets/Dias Especiales/profesor.png" alt="Día del Maestro">
+				<p class="text">Día del Maestro</p>
 			</div>
 			<div class="day">
-				<p class="text light">Festividades</p>
+				<img src="./Assets/Dias Especiales/festividades.png" alt="Festividades">
+				<p class="text">Festividades</p>
 			</div>
 			<div class="day">
-				<p class="text light">Cumpleaños</p>
+				<img src="./Assets/Dias Especiales/cumpleaños.png" alt="Cumpleaños">
+				<p class="text">Cumpleaños</p>
 			</div>
 			<div class="day">
-				<p class="text oscure">Aniversarios</p>
+				<img src="./Assets/Dias Especiales/aniversarios.png" alt="Aniversarios">
+				<p class="text">Aniversarios</p>
 			</div>
 			<div class="day">
-				<p class="text light">Navidad</p>
+				<img src="./Assets/Dias Especiales/navidad.png" alt="Navidad">
+				<p class="text">Navidad</p>
 			</div>
 			<div class="day">
-				<p class="text oscure">Mucho más...</p>
+				<img src="./Assets/Dias Especiales/heart.png" alt="Mucho Más">
+				<p class="text">Mucho más...</p>
 			</div>
 		</section>
 
@@ -157,15 +215,31 @@
 
 			<div class="contact" id="contact">
 				<div class="email">
-					<img src="./Assets/envelope.png" alt="gabriela610vg@gmail.com">
-					gabriela610vg@gmail.com
+					<p>
+						<span class="fa fa-envelope"></span> gabriela610vg@gmail.com
+					</p>
 				</div>
 				<div class="tel">
-					<img src="./Assets/phone.png" alt="+51 961057471">
-					+51 961057471
+					<p>
+						<span class="fa fa-phone"></span> 970974546
+					</p>
+				</div>
+				<div class="credits">
+						<div>Snow Cap Pack <a href='https://www.freepik.com/free-vector/snow-cap-pack-in-flat-style_1475782.htm'>Designed by Freepik</a></div>
+						<div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+	
+						<div>Icons made by <a href="https://www.flaticon.com/authors/pongsakornred" title="pongsakornRed">pongsakornRed</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+						
+						<div>Icons made by <a href="https://www.flaticon.com/authors/vectors-market" title="Vectors Market">Vectors Market</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+				
+						<div class="author">Web Desarrolloda por <a href="https://github.com/NicolasTicona" target="_blank">Nicolas Ticona Valdivia</a></div>
 				</div>
 			</div>
+
+
 	</footer>
+
+	<script src="./js/scroll.js"></script>
 	
 </body>
 </html>

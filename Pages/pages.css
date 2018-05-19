@@ -20,28 +20,51 @@ a{
 
 header{
 	width: 100%;
-	box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.75);
-	background: #fcfcfc;
-	margin-bottom: 100px;
+	/* box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.75); */
+	background: #fff;
+	position: fixed;
+	z-index: 1000;
+	transition: all .3s ease;
 }
 
 header .brand{
+	position: relative;
 	width: 100%;
 	text-align: center;
 	padding: 20px 0;
+	transition: all .3s ease;
 }
 
-header .brand img{
-	width: 150px;
+header .brand a{
+	display: inline-block;
+	position: relative;
+	z-index: 20;
 }
+
+header .brand a img{
+	width: 150px;
+	transition: all .3s ease;
+	
+}
+
+.snowimage{
+	position: absolute;
+	width: 110%;
+	transform: translateY(-40%) scaleY(.5);
+	top: 0px;
+	left: -30px;
+	z-index: 1;
+}
+
 
 
 /*Main*/
 
 main{
+	padding: 20px;
+	padding-top: 200px;
 	width: 90%;
 	margin: auto;
-	padding: 20px;
 }
 
 main .title{
@@ -57,8 +80,9 @@ main .sub-title{
 }
 
 main .gallery {
+	position: relative;
 	width: 90%;
-	background: #F3F3F3;
+	background: url('../Assets/catalogo-pattern.png');
 	margin: 70px auto;
 	padding: 30px;
 	text-align: center;
@@ -70,23 +94,25 @@ main .gallery {
 }
 
 main .gallery .container{
+	position: relative;
+	background: rgba(255,255,255, .75);
 	margin: 15px;
-	background: #fff;
 	margin-bottom: 50px;
-	padding: 15px;
+	padding: 20px;
+	overflow: hidden;
+	transition: all .3s ease;
 }
+
+main .gallery .container:hover{
+	transform: scale(1.05);
+	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.75);
+}
+
 
 main .gallery .container img{
 	margin-bottom: 15px;
-	min-width: 150px;
-	max-width: 250px;
-}
-
-main .gallery .container .tags{
-	font-size: 12px;
-	font-weight: 500;
-	color: #E04636;
-	font-weight: bold;
+	min-width: 200px;
+	max-width: 300px;
 }
 
 main .gallery .container p{
@@ -95,7 +121,7 @@ main .gallery .container p{
 }
 
 main .gallery .container .code{
-	/*width: 100%;*/
+	width: 100%;
 	display: block;
 	margin-top: 15px;
 	color: #4B43E6;
@@ -107,7 +133,7 @@ main .gallery .container .price{
 	text-align: center;
 	font-size: 22px;
 	color: #fff;
-	background: #e74c3c;
+	background: rgb(47, 158, 218);
 	padding: 15px 10px;
 	font-weight: 700;
 	transition: all .3s ease;
@@ -123,9 +149,8 @@ main .gallery .container .price:hover{
 /*Footer*/
 
 footer{
-	margin-top: 100px;
 	width: 100%;
-	background: url('../Assets/regal.png');
+	background: url('../Assets/catalogo-pattern.png');
 }
 
 footer .head{
@@ -134,7 +159,7 @@ footer .head{
 }
 
 footer .head img{
-	width: 150px;
+	width: 200px;
 }
 
 footer .contact{
@@ -142,21 +167,22 @@ footer .contact{
 	text-align: center;
 	margin-top: 50px;
 	padding: 20px;
-	background: rgba(45,45,45,.8);
+	background: rgba(45,45,45,.6);
 }
 
 footer .contact div{
-	font-family: 'Raleway';
-	font-weight: 300;
-	color: #fff;
-
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	text-align: center
 }
 
-footer .contact div img{
-	width: 40px;
+footer .contact div p{
+	font-family: 'Raleway';
+	font-weight: 700;
+	color: #fff;
+	margin: 10px 0;
+	align-items: center;
+}
+
+footer .contact div p span{
 	margin-right: 10px;
+	font-size: 22px;
 }

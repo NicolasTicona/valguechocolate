@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ValGue | Bombones</title>
+	<title>Bombones | Valgue Chocolate</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -10,9 +10,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
 
 	<!-- Css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="./pages.css">
-
 	<link rel="stylesheet" href="./responsive-pages.css">
+
+	<!-- Jquery -->
+	
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>	
 
 </head>
 <body>
@@ -20,6 +27,7 @@
 	<header>
 		<div class="brand">
 			<a href="../index.html"><img src="../Assets/Logo.png" alt="ValGue Chocolate"></a>
+			<img src="../Assets/snow1.png" alt="" class="snowimage">
 		</div>
 	</header>
 
@@ -31,11 +39,11 @@
 
 		<div class="gallery">
 			
+			
 			<div class="container">
 				<img src="../Assets/Bombones/1.jpg" alt="Bombones">
 
-				<div class="tags">Cualquier ocasión</div>
-
+				<p>Docena</p>
 				<button class="price btn">18 Soles</button>
 
 				<span class="code">Código: b001</span>
@@ -45,9 +53,9 @@
 			<div class="container">
 				<img src="../Assets/Bombones/2.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre - San Valentín - Cumpleaños</div>
-
-				<button class="price btn">10 Soles</button>
+				<p>Caja Trupan</p>
+				<p>12 Bombones</p>
+				<button class="price btn">25 Soles</button>
 
 				<span class="code">Código: b002</span>
 			</div>
@@ -55,8 +63,7 @@
 			<div class="container">
 				<img src="../Assets/Bombones/3.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre - San Valentín - Cumpleaños</div>
-
+				<p>8 Bombones</p>
 				<button class="price btn">10 Soles</button>
 
 				<span class="code">Código: b003</span>
@@ -66,9 +73,8 @@
 			<div class="container">
 				<img src="../Assets/Bombones/4.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre - San Valentín</div>
-
-				<button class="price btn">12 Soles</button>
+				<p>Docena</p>
+				<button class="price btn">15 Soles</button>
 
 				<span class="code">Código: b004</span>
 			</div>
@@ -76,9 +82,9 @@
 			<div class="container">
 				<img src="../Assets/Bombones/5.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre - San Valentín</div>
+				<p>Rosas + Corazones</p>
 
-				<button class="price btn">12 Soles</button>
+				<button class="price btn">13 Soles</button>
 
 				<span class="code">Código: b005</span>
 			</div>	
@@ -86,8 +92,7 @@
 			<div class="container">
 				<img src="../Assets/Bombones/6.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre - San Valentín</div>
-
+				<p>3 Corazones</p>
 				<button class="price btn">10 Soles</button>
 
 				<span class="code">Código: b006</span>
@@ -96,9 +101,8 @@
 			<div class="container">
 				<img src="../Assets/Bombones/7.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre</div>
-
-				<button class="price btn">22 Soles</button>
+				<p>Docena</p>
+				<button class="price btn">20 Soles</button>
 
 				<span class="code">Código: b007</span>
 			</div>									
@@ -107,9 +111,8 @@
 			<div class="container">
 				<img src="../Assets/Bombones/8.jpg" alt="Bombones">
 
-				<div class="tags">Dia de la Madre - Cumpleaños</div>
-
-				<button class="price btn">25 Soles</button>
+				<p>Docena</p>
+				<button class="price btn">22 Soles</button>
 
 				<span class="code">Código: b008</span>
 			</div>	
@@ -117,24 +120,59 @@
 
 	</main>
 
-		<footer>
+
+	<footer>
 		
-		<div class="head">
-			<img src="../Assets/Logo.png" alt="ValGue Chocolate">
+		<div class="head"><a href="#">
+				<img src="../Assets/Logo.png" alt="ValGue Chocolate"></a>
 		</div>
 
 
-			<div class="contact">
+			<div class="contact" id="contact">
 				<div class="email">
-					<img src="../Assets/envelope.png" alt="gabriela610vg@gmail.com">
-					gabriela610vg@gmail.com
+					<p>
+						<span class="fa fa-envelope"></span> gabriela610vg@gmail.com
+					</p>
 				</div>
 				<div class="tel">
-					<img src="../Assets/phone.png" alt="+51 961057471">
-					+51 961057471
+					<p>
+						<span class="fa fa-phone"></span> 970974546
+					</p>
 				</div>
 			</div>
-	</footer>
+	</footer>	
+
+	<script>
+	
+			var header = $('header')
+			var cont_logo = $('header .brand')
+			var logo = $('header .brand a img')
+			var snow = $('header .brand .snowimage')
+			var scrollTop = 0;
+		
+			header.css({
+				background: '#fff'
+			})
+	
+	
+			$(window).scroll(function(){
+				scrollTop = $(window).scrollTop();
+		
+				if(scrollTop > 100){
+					header.css({
+						background: 'transparent'
+					})
+				}	
+				else{	
+					header.css({
+						background: '#fff'
+					})
+	
+				}		
+				
+			})
+		
+		</script>	
 
 </body>
 </html>

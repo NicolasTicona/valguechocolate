@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>ValGue | Trufas</title>
+	<title>Trufas | Valgue Chocolate</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="shortcut icon" type="image/x-icon" href="../favicon.ico">
 
@@ -10,9 +10,16 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,700" rel="stylesheet">
 
 	<!-- Css -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<link rel="stylesheet" href="./pages.css">
-
 	<link rel="stylesheet" href="./responsive-pages.css">
+
+	<!-- Jquery -->
+	
+	<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -20,6 +27,7 @@
 	<header>
 		<div class="brand">
 			<a href="../index.html"><img src="../Assets/Logo.png" alt="ValGue Chocolate"></a>
+			<img src="../Assets/snow1.png" alt="" class="snowimage">
 		</div>
 	</header>
 
@@ -28,52 +36,105 @@
 
 		<h2 class="title">Trufas</h2>
 		<div class="gallery">
-			
+		
 			<div class="container">
 				<img src="../Assets/Trufas/1.jpg" alt="Trufa">
 
-				<div class="tags">Dia de la Madre</div>
-				
-				<p>Docena</p>
+				<p>Media Docena</p>
+				<p>Pequeñas</p>
 
-				<button class="price btn">25 Soles</button>
+				<button class="price btn">13 Soles</button>
 				<span class="code">Código: t001</span>
 			</div>
 
 
 			<div class="container">
+				
 				<img src="../Assets/Trufas/2.jpg" alt="Trufa">
 
-				<div class="tags">Dia de la Madre</div>
+				<p>Media Docena</p>
+				<p>Pecana, Mani y Almendra</p>
+
+				<button class="price btn">15 soles</button>
+				<span class="code">Código: t002</span>
+			</div>
+
+			<div class="container">
+				<img src="../Assets/Trufas/3.jpg" alt="Trufa">
+
+				<p>Docena</p>
+				<p>Pequeñas</p>
+
+				<button class="price btn">25 Soles</button>
+				<span class="code">Código: t003</span>
+			</div>
+
+
+			<div class="container">
+				<img src="../Assets/Trufas/4.jpg" alt="Trufa">
 
 				<p>Media Docena</p>
+				<p>Grandes</p>
 
-				<button class="price btn">13 soles</button>
-				<span class="code">Código: t002</span>
+				<button class="price btn">18 soles</button>
+				<span class="code">Código: t004</span>
 			</div>
 
 		</div>
 
 	</main>
 
-		<footer>
+	<footer>
 		
-		<div class="head">
-			<img src="../Assets/Logo.png" alt="ValGue Chocolate">
+		<div class="head"><a href="#">
+				<img src="../Assets/Logo.png" alt="ValGue Chocolate"></a>
 		</div>
 
 
-			<div class="contact">
+			<div class="contact" id="contact">
 				<div class="email">
-					<img src="../Assets/envelope.png" alt="gabriela610vg@gmail.com">
-					gabriela610vg@gmail.com
+					<p>
+						<span class="fa fa-envelope"></span> gabriela610vg@gmail.com
+					</p>
 				</div>
 				<div class="tel">
-					<img src="../Assets/phone.png" alt="+51 961057471">
-					+51 961057471
+					<p>
+						<span class="fa fa-phone"></span> 970974546
+					</p>
 				</div>
 			</div>
 	</footer>
 
+	<script>
+	
+			var header = $('header')
+			var cont_logo = $('header .brand')
+			var logo = $('header .brand a img')
+			var snow = $('header .brand .snowimage')
+			var scrollTop = 0;
+		
+			header.css({
+				background: '#fff'
+			})
+	
+	
+			$(window).scroll(function(){
+				scrollTop = $(window).scrollTop();
+		
+				if(scrollTop > 100){
+					header.css({
+						background: 'transparent'
+					})
+				}	
+				else{	
+					header.css({
+						background: '#fff'
+					})
+	
+				}		
+				
+			})
+		
+		</script>	
 </body>
 </html>
