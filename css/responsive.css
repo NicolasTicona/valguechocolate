@@ -42,7 +42,6 @@
 	header .wallpaper{
 		background: url('../Assets/BgHeader.jpg');
 		background-position: center;
-		background-size: cover;
 	}
 
 	header .menu a{
