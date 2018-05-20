@@ -1,6 +1,14 @@
 /* Tablet 768px */
 
 @media screen and (max-width: 768px){
+	header .wallpaper{
+		width: 100%;
+		height: 100vh;
+	
+		background: url('../Assets/BgHeader.jpg');
+		background-position: center;
+		background-size: cover;
+	}
 
 	header .brand img{
 		width: 40%
@@ -30,10 +38,22 @@
 	}
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 430px){
+	header .wallpaper{
+		width: 100%;
+		height: 100vh;
+	
+		background: url('../Assets/BgHeader.jpg');
+		background-position: center;
+		background-size: cover;
+	}
 
 	header .menu a{
 		font-size: 13px;
+	}
+
+	header .brand-description{
+		padding: 12px;
 	}
 
 	header .brand-description .description p{
@@ -45,6 +65,7 @@
 		width: 120px;
 		transform: none;
 	}
+
 	main .season-promotion .center{
 		text-align: center;
 	}
@@ -62,25 +83,31 @@
 	}
 
 	main .showcase .chocolate .info{
-		padding: 20px;
-		width: 80%;
+		width: 100%;
+		padding: 15px;
+	}
+
+	header .brand-description .description p{
+		font-size: 11px;
 	}
 
 	main .showcase .chocolate .info .title{
-		font-size: 18px;
-		margin-bottom: 30px;
+		font-size: 14px;
+		font-weight: 700;
+		margin-bottom: 10px;
 	}
 
 	main .showcase .chocolate .info .description{
-		font-size: 14px;
-	}
-	
-	main .showcase .chocolate .info .description strong{
-		font-size: 16px;
+		font-size: 12px;
 	}
 
 	main .showcase .chocolate .info .btn{
-		font-size: 16px;
+		margin-top: 20px;
+		font-size: 15px;
+	}
+	
+	main .showcase .chocolate .info .description strong{
+		font-size: 14px;
 	}
 
 	main .special-days{
@@ -98,8 +125,21 @@
 }
 
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 375px){
+	header .wallpaper{
+		width: 100%;
+		height: 100vh;
+	
+		background: url('../Assets/BgHeader.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+	
 	header .menu a{
 		font-size: 11px;
 	}
-}
+
+	header .brand-description{
+		padding: 5px;
+	}
+}	
