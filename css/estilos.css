@@ -5,6 +5,12 @@
 	100% {transform: rotate(360deg);}
 }
 
+@keyframes Pulse{
+	0%{transform: scale(1);}
+	50%{transform: scale(1.1);}
+	100%{transform: scale(1);}
+}
+
 *{
 	margin: 0;
 	padding: 0;
@@ -307,6 +313,10 @@ main .showcase .chocolate .info .btn{
 	font-weight: 400;
 	border-radius: 3px;
 	transition: all .3s ease;
+
+	animation-name: Pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 1.5s;
 
 }
 
