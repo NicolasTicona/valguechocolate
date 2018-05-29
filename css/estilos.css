@@ -195,13 +195,16 @@ main .season-promotion .center{
 }
 
 main .season-promotion .title{
-	font-size: 35px;
+	font-size: 50px;
 	color: rgb(47, 158, 218);
+	font-family: 'Indie Flower';
 	margin-bottom: 25px;
 }
 
 main .season-promotion p{
-	color: rgb(38, 128, 177);
+	font-size: 25px;
+	color: rgb(47, 158, 218);
+	font-family: 'Indie Flower';
 	font-weight: 600;
 }
 
@@ -219,6 +222,8 @@ main .season-promotion .products .product{
 	margin-left: 0;
 	padding: 10px;	
 	color: #fff;
+	font-family: 'Indie Flower';
+	font-size: 22px;
 	
 	background: linear-gradient(to right, rgba(48,182,255,1) 0%,rgb(40, 152, 212) 100%);
 }
@@ -272,8 +277,8 @@ main .showcase .chocolate .info {
 }
 
 main .showcase .chocolate .info .title{
-	font-size: 28px;
-	font-family: 'Raleway';
+	font-size: 35px;
+	font-family: 'Indie Flower';
 	font-weight: 700;
 	width: 50%;
 	margin: auto;
@@ -304,13 +309,12 @@ main .showcase .chocolate .info .btn{
 	margin: auto;
 	margin-top: 30px;
 	text-align: center;
-	font-family: Raleway;
-	font-size: 20px;
+	font-family: 'Indie Flower';
+	font-size: 25px;
 	color: #fff;
 	background: rgb(47, 158, 218);
 	box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.75);
 	padding: 15px 30px;
-	font-weight: 400;
 	border-radius: 3px;
 	transition: all .3s ease;
 
@@ -360,19 +364,24 @@ main .secondary-text{
 
 main .secondary-text .title{
 	font-weight: 500;
-	font-family: 'Raleway';
-	font-size: 50px;
+	font-family: 'Indie Flower';
+	font-size: 60px;
 	color: #fc0fc0;
 	margin-bottom: 15px;
 }
 
 main .secondary-text .text{
-	font-family: 'Raleway';
-	font-style: 16px;
+	font-family: 'Indie Flower';
+	font-size: 22px;
 	font-weight: 400;
 	padding: 20px 0px;
 	color: #fff;
 	background: rgba(252, 15, 192, .6);
+}
+
+main .secondary-text .text b{
+	font-family: 'Indie Flower';
+	font-size: 25px;
 }
 
 main .special-days{
@@ -391,6 +400,21 @@ main .special-days .day{
 	transition: all .3s ease;
 	text-align: center;
 	padding: 20px;
+	margin-bottom: 15px;
+}
+
+
+main .special-days .padre{
+	padding: 14px;
+	width: 60%;
+	border: 6px dashed rgba(252, 15, 192);
+	cursor: pointer;
+}
+
+main .special-days .padre > img{
+	animation-name: Pulse;
+	animation-iteration-count: infinite;
+	animation-duration: 1.2s;
 }
 
 main .special-days .day .text{
@@ -402,6 +426,7 @@ main .special-days .day .text{
 
 main .special-days .day img{
 	width: 50%;
+	
 }
 
 /*Footer*/

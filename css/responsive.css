@@ -33,6 +33,10 @@
 		width: 100%;
 	}
 
+	main .showcase .chocolate .info .title{
+		font-size: 28px;
+	}
+
 	main .special-days .day .text {
 		font-size: 16px;
 	}
@@ -84,7 +88,7 @@
 	}
 
 	main .showcase .chocolate .info .title{
-		font-size: 16px;
+		font-size: 26px;
 		font-weight: 700;
 		margin-bottom: 10px;
 	}
@@ -95,7 +99,7 @@
 
 	main .showcase .chocolate .info .btn{
 		margin-top: 20px;
-		font-size: 16px;
+		font-size: 20px;
 	}
 	
 	main .showcase .chocolate .info .description strong{
@@ -125,5 +129,9 @@
 
 	header .brand-description{
 		padding: 5px;
+	}
+
+	main .showcase .chocolate .info .title{
+		font-size: 22px;
 	}
 }	

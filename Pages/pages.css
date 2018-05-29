@@ -69,14 +69,17 @@ main{
 
 main .title{
 	display: inline-block;
-	font-size: 50px;
+	font-size: 60px;
 	font-weight: 300;
 	padding-bottom: 4px;
+	color: #2C2C2C;
 	border-bottom: 2px solid #2C2C2C;
+	font-family: 'Indie Flower'
 }
 
 main .sub-title{
 	margin-top: 15px;
+	color: #2C2C2C;
 }
 
 main .gallery {
