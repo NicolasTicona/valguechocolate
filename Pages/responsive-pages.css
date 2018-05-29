@@ -5,6 +5,9 @@
 		width: 100px;
 	}
 
+	main .title{
+		font-size: 40px;
+	}
 	
 	main .sub-title{
 		font-size: 14px;
