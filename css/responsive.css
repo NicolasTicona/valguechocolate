@@ -66,6 +66,13 @@
 		text-align: center;
 	}
 
+	main .season-promotion .title{
+		font-size: 35px;
+	}
+	main .season-promotion .p{
+		font-size: 20px;
+	}
+
 	main .season-promotion .products{
 		justify-content: center;
 	}
